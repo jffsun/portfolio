@@ -119,7 +119,6 @@ span[data-descr]:hover::after {
 
 .project-card img {
     max-height: 200px;
-    border: 
 }
 
 #project1 {
@@ -140,4 +139,3 @@ span[data-descr]:hover::after {
         flex-direction: column;
     }
     }
-}
