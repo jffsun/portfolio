@@ -6,6 +6,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 </head>
 
  <!-- Header -->
@@ -20,7 +22,7 @@
           <a href="#about"/>01. About</a>
         </li>
         <li class="button">
-          <a href="projects"/>02. Projects</a>
+          <a href="#projects"/>02. Projects</a>
         </li>
         <li class="button">
           <a href="#contact"/>03. Contact</a>
@@ -36,53 +38,50 @@
   <!-- About Me -->
   <div class="content">
     <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I am a Southern California native who has taken a recent interest and passion to coding.
-    </p>
+      <h2>About Me</h2>
+        <p>
+          I am a Southern California native who has taken a recent interest and passion to coding.
+        </p>
+         <p>
+          While my educational background is in Psychology, I am super <span data-descr="Get it? 🧠">psyched</span> to be on this new path.
+        </p>
+        <p>
+          Feel free to tag along on my coding journey!
+        </p>
 
-    <p>
-      While my educational background is in Psychology, I am super <span data-descr="Get it? 🧠">psyched</span> to be on this new path.
-    </p>
-    </p>
+      <!-- About Me Portrait !-->
+      <img src="./assets/images/about-me-portrait.jpg" alt="Jeffrey Sun Portrait" class="float-right"/>
 
-    <p>
-      Feel free to tag along as I develop my professional portfolio.
-    </p>
-
-    <!-- About Me Portrait !-->
-    <img href="https://placeholder.com/" src="https://via.placeholder.com/150" alt="placeholder"/>
     </section>
+  </div>
 
   <!-- Projects -->
-  <h2>Projects</h2>
-  <section id="project1" class="first-project">
-    <h3> Project 01 </h3>  
-      <a href="#"/>Project 01</a>
-      <img src="#" alt="Project picture"/>
-      <p> Insert project description </p>
-  </section>
+    <div id="projects" class="project-container">
+      <h2>Projects</h2>
+      <section id="project1" class="project-card">
+        <h3> Project 01 </h3>  
+          <img src="./assets/images/first-project.jpg" alt="Website example screenshot"/>
+          <p> Utilized HTML and CSS to increase Search Engine Optimization for the Horiseon Website (Click 'Horiseon Website' to follow) </p>
+      </section>
 
-  <sectionclass="project">
-    <h3> Project 02 </h3>  
-      <a href="#"/>Project 02</a>
-      <img src="#" alt="Project picture"/>
-      <p> Insert project description </p>
-  </section>
+      <section id="project2" class="project-card">
+        <h3> Project 02 </h3>  
+          <img src="./assets/images/spotify.jpg" alt="Spotify logo"/>
+          <p> Insert project description </p>
+      </section>
 
-  <section id="project3" class="project">
-    <h3> Project 03 </h3>  
-    <img src="#" alt="Project picture"/>
-      <p> Insert project description </p>
-  </section>
+      <section id="project3" class="project-card">
+        <h3> Project 03 </h3>  
+        <img src="./assets/images/cooking.jpg" alt="Cooking app logo"/>
+          <p> Insert project description </p>
+      </section>
 
-  <section id="project4" class="project">
-    <h3> Project 04 </h3>  
-      <a href="#"/>Project 04</a>
-      <img src="#" alt="Project picture"/>
-      <p> Insert project description </p>
-  </section>
-    
+      <section id="project4" class="project-card">
+        <h3> Project 04 </h3>  
+          <img src="./assets/images/fitness.jpg" alt="Fitness app logo"/>
+          <p> Insert project description </p>
+      </section>
+  </div>
 
   <!-- Contact Me -->
   <div id="contact">
