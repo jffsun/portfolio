@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-seconary: 'Source Code Pro' monospace;
@@ -9,8 +14,8 @@
 header {
     font-family: var(--ff-primary);
     padding: 30px;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: #F47F49;
+    color: black;
     width: 100%
 }
 
@@ -40,22 +45,22 @@ header nav {
 .button:hover {
     background-color: #4CAF50;
     color: white;
-    }
+}
 
 .content {
     padding: 50px;
     height: 400px;
     font-family: var(--ff-primary);
-    background-color: #0072bb;
-    color: #ffffff;
-    }
+    background-color:#905D49;
+    color: black;
+}
 
 .about {
     text-align: left;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    }
+}
 
 .about {
     font-size: 36px
@@ -64,7 +69,7 @@ header nav {
 .about p {
     width: 100%;
     font-size: 20px;
-    }
+}
 
 /* Portrait Styling */
 
@@ -96,41 +101,92 @@ span[data-descr]:hover::after {
     color: pink;
     font-size: 80%;
     z-index: 1;
-} 
+    } 
+ 
+/* Styling Project Section */
 
-.project-container {
-    display: flex;
+.project {
     padding: 50px;
-    height: 1500px;
+    height: 2000px;
     font-family: var(--ff-primary);
-    background-color: #104d35;
+    background-color: #779E68;
     color: #ffffff;
     }    
 
-.project-container h2 {
+.project h2 {
     font-size: 50px;
+    display: block;
+    width: 100%
+    }    
+    
+/* Project Cards Styling */
+.project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid black;
+    padding: 50px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    background-color: #657E55;
     }
 
-.project-card {
-    width: 100%;
-    border: 10px;
-    padding: 50px;
+.project-card-container img {
+    max-height: 350px;
+    position: relative;
+    height: 100vh;
+    padding-right: 200px;
 }
 
-.project-card img {
-    max-height: 200px;
+.project-card-container h3 {
+    text-align: center;
+    color: #ffffff;
+    background-color: orange;
+    font-size: 30px;
+    font-family: var(--ff-primary);
+    max-height: 40px; 
+    margin-bottom: 100px;
 }
+
+.project-card-container p {
+    text-align: center;
+}
+
+#project3 {
+    justify-content: flex-end;
+}
+
+
+/* Header On Image Styling */
+/* .project-header-wrapper {
+    position: absolute;
+    bottom: 90%;
+    left: 50%;
+    padding: 5px;
+    border: 1px black solid;
+} */
 
 #project1 {
     text-align: center;
 }
 
-#project2, #project4 {
-    text-align: left;
+.float-right {
+    float: right;
 }
 
-#project3 {
-    text-align: right;
+.float-left {
+    float: left;
+}
+
+.project-text {
+    max-width: 600px;
+}
+
+.card-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* If screen size is smaller than 800 pixels, the following style will apply */
