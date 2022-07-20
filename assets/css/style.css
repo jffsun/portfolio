@@ -3,36 +3,65 @@
     margin: 0;
 }
 
+/* Custom font variables */
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-seconary: 'Source Code Pro' monospace;
-    }
-/* Header Styling  */
+    --ff-secondary: 'Source Code Pro' monospace;
+}
+
+/* Custom color variables */
+:root {
+    --yellow: #F6C562;
+    --brown: #905D49;
+    --orange: #F47F49;
+    --light-green: #779E68;
+    --mid-green: #657E55;
+    --dark-green: #4C5E37;
+}
 
 /* Header container styling */
+.header-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 230px;
+    width: 100%;
+} 
 
-header {
+.header-text {
     font-family: var(--ff-primary);
-    padding: 30px;
-    background-color: #F47F49;
+    padding: 50px 0px 30px 50px;
+    background-color: var(--yellow);
     color: black;
-    width: 100%
+    width: 100%;
 }
 
 header h1 {
     display: block;
     font-size: 50px;
+    margin-bottom: 30px;
 } 
 
-/* Styling Header Navigation Buttons */
+header p {
+    font-size: 20px;
+} 
 
-header nav {
-    float: right;
+/* Navigation bar button styling */
+.navbuttons {
+    width: 100%;
+    background-color: var(--yellow);
+    text-align: end;
 }
 
+/* Remove default styling from all hyperlinks */
+a:link, a:visited,  a:hover, a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Navigation button styling */
 .button {
-    border: none;
-    background-color: white;
+    border: 1px black outset;;
+    background-color: var(--orange);
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
@@ -40,39 +69,54 @@ header nav {
     font-size: 16px;
     margin: 1px 1px;
     cursor: pointer;
+    font-family: var(--ff-secondary);
   }
 
+/* Nav button hover change color */
 .button:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.content {
-    padding: 50px;
-    height: 400px;
-    font-family: var(--ff-primary);
-    background-color:#905D49;
+    background-color: var(--yellow);
     color: black;
 }
 
-.about {
-    text-align: left;
-    height: 400px;
+/* About section container */
+.about-section-container {
+    padding: 50px;
+    height: 300px;
+    font-family: var(--ff-primary);
+    background-color: var(--brown);
+    color: black;
+    width: 100%;
+}
+
+/* Container with portrait and description */
+.about-details {
     display: flex;
     flex-wrap: wrap;
 }
 
-.about {
-    font-size: 36px
+.about-details img {
+    max-height: 300px;
 }
 
-.about p {
+/* About me description */
+.about-text {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    padding-right: 400px;
+}
+
+.about-text h2 {
+    font-size: 40px;
+}
+
+.about-text p {
     width: 100%;
     font-size: 20px;
 }
 
-/* Portrait Styling */
-
+/* Portrait styling */
 .about img {
   position: absolute;
   height: 300px;
@@ -80,46 +124,96 @@ header nav {
   margin-top: 100px;
   float: right;
   margin-left: 1200px;
- }
+}
 
+/* Bad psychology joke hover */
 span[data-descr] {
     position: relative;
     text-decoration: underline;
-    color: pink;
     cursor: grab;
-  }  
+}  
 
 span[data-descr]:hover::after {
     content: attr(data-descr);
     position: absolute;
     left: 0px;
     bottom: 24px;
-    min-width: 60px;
-    border: 1px #aaaaaa solid;
-    background-color: white;
+    min-width: 70px;
+    border: 1px black solid;
+    background-color: var(--yellow);
     padding: 12px;
-    color: pink;
+    color: black;
     font-size: 80%;
     z-index: 1;
-    } 
+ } 
  
-/* Styling Project Section */
-
+/* Projects section container */
 .project {
+    width: 100%;
     padding: 50px;
-    height: 2000px;
+    height: 30%;
     font-family: var(--ff-primary);
-    background-color: #779E68;
+    background-color: var(--light-green);
     color: #ffffff;
     }    
 
+/* Projects section header  */
 .project h2 {
     font-size: 50px;
     display: block;
     width: 100%
-    }    
-    
-/* Project Cards Styling */
+}    
+
+/* Larger first project styling */
+.first-project-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid black;
+    padding: 50px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    background-color: var(--mid-green);
+}
+
+/* Container for first project image and text */
+.first-card-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first-project-container img {
+    max-height: 800px;
+    position: relative;
+}
+
+.first-project-container h3 {
+    text-align: center;
+    background-color: var(--orange);
+    font-size: 30px;
+    font-family: var(--ff-primary);
+    max-height: 40px; 
+    margin-bottom: 30px;
+}
+
+.first-project-container p {
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Horiseon website link styling */
+.first-project-container a:link {
+    text-decoration: underline;
+}
+
+/* Horiseon hyperlink styling */
+.first-project-container a:visited {
+    text-decoration: none; color: white;
+}
+
+/* Container for card image and text */
 .project-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -129,65 +223,80 @@ span[data-descr]:hover::after {
     padding: 50px;
     justify-content: flex-start;
     margin-bottom: 20px;
-    background-color: #657E55;
-    }
-
-.project-card-container img {
-    max-height: 350px;
-    position: relative;
-    height: 100vh;
-    padding-right: 200px;
+    background-color: var(--mid-green);
 }
 
 .project-card-container h3 {
     text-align: center;
     color: #ffffff;
-    background-color: orange;
+    background-color: var(--orange);
     font-size: 30px;
     font-family: var(--ff-primary);
     max-height: 40px; 
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .project-card-container p {
     text-align: center;
+    font-size: 22px;
 }
 
-#project3 {
-    justify-content: flex-end;
+/* Project card image styling */
+.project-card-container img {
+    max-height: 350px;
+    position: relative;
+    padding-right: 200px;
 }
 
-
-/* Header On Image Styling */
-/* .project-header-wrapper {
-    position: absolute;
-    bottom: 90%;
-    left: 50%;
-    padding: 5px;
-    border: 1px black solid;
-} */
-
-#project1 {
-    text-align: center;
+#project4 img {
+    padding-left: 60px;
 }
 
-.float-right {
-    float: right;
-}
-
-.float-left {
-    float: left;
-}
-
+/* Container for project card header and paragraph */
 .project-text {
     max-width: 600px;
 }
 
+#project4 .project-text {
+    max-width: 700px;
+}
+/* Container for project card image and all text */
 .card-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* Contact section container */
+.contact {
+    font-family: var(--ff-primary);
+    padding: 50px;
+    background-color: var(--yellow);
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.contact li {
+    list-style-type: none;    
+}
+
+/* Contact buttons */
+.contact-button {
+    border: 1px black outset;
+    background-color: var(--orange);
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1px 1px;
+    cursor: pointer;
+    font-style: italic;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+  }
+
 
 /* If screen size is smaller than 800 pixels, the following style will apply */
 @media (min-width: 800px) {
