@@ -5,12 +5,17 @@
   <title>Portfolio</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- External link to css sheet -->
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
+<!-- 
+  External links to custom fonts -->
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+  
   <!-- Header -->
   <header>
     <div class="header-section-container">
@@ -31,9 +36,6 @@
               </li>
               <li class="button">
                 <a href="#contact"/>03. Contact</a>
-              </li>
-              <li class="button">
-                <a href="#resume">Resume</a>
               </li>
             </nav>
           </div>
@@ -69,18 +71,21 @@
   <div id="projects" class="project">
     <h2>Projects</h2>
 
-      <!-- Project Card 1 -->
+      <!-- Project card 1 -->
       <section id="project1" class="first-project-container">
         
         <!-- Container for image and text -->
         <div class="first-card-details">
-          <img src="./assets/images/first-project.jpg" alt="Website example screenshot"/>
-              
+
+          <!-- Image hyperlink to deployed application -->
+          <a href="https://jffsun.github.io/chall-one-accessibility/" target="_blank">
+          <img src="./assets/images/first-project.jpg" alt="Project example screenshot"/a>
+          </a>
+
             <!-- Container for text only -->
             <div class="project-text">
               <h3>Project 01: Search Engine Optimization</h3>
-              <p>Refactored HTML and CSS code to increase accessibility and Search Engine Optimization for the 
-                <a href="https://jffsun.github.io/chall-one-accessibility/" target="_blank">Horiseon Website</a>.
+              <p>Refactored HTML and CSS code to increase accessibility and Search Engine Optimization for the Horiseon Website.</a>
               </p>
             </div>
         </div>
@@ -89,7 +94,7 @@
       <!-- Project 2 -->
       <div id="project2" class="project-card-container"> 
         <div class="card-details">
-          <img src="./assets/images/cooking.jpg" alt="Cooking app logo"/>
+          <img src="./assets/images/cooking.jpg" alt="Cooking app logo"/a>
             <div class="project-text">
               <h3>Project 02: Perfect Recipe Application</h3>
               <p>
@@ -107,7 +112,7 @@
       <!-- Project 3 -->
       <section id="project3" class="project-card-container">
         <div class="card-details">
-          <img src="./assets/images/spotify.jpg" alt="Spotify logo"/>  
+          <img src="./assets/images/spotify.jpg" alt="Spotify logo"/a>  
             <div class="project-text">
               <h3> Project 03: Spotify API - Music Discovery </h3>   
                 <p>
@@ -142,7 +147,7 @@
   </div>
 
   <!-- Contact me section -->
-  <div class="contact">
+  <div id="contact" class="contact">
     <h2>Contact Me</h2> 
       <li class="contact-button">
         <a href="">jeffreysun811@gmail.com</a>
