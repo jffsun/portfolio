@@ -24,7 +24,7 @@ The following image shows a responsive layout of the Header and About Me section
 ![Responsive Layout](./assets/images/screenshot5.jpg)
 
 ### Link to Github Page
-[https://jffsun.github.io/chall-one-accessibility/](https://jffsun.github.io/chall-one-accessibility/).
+[https://jffsun.github.io/portfolio/](https://jffsun.github.io/portfolio/).
 
 ### Link to Github Respository
-[https://github.com/jffsun/chall-one-accessibility](https://github.com/jffsun/chall-one-accessibility).
+[https://github.com/jffsun/portfolio](https://github.com/jffsun/portfolio).
